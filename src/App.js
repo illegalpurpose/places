@@ -1,8 +1,19 @@
+import React from 'react';
 import './App.css';
 import Article from './components/Article';
-import Header from './components/Header/Header';
-import articles from './articles/articles.json';
+import axios from 'axios';
+import Header from './components/Header/Header'
+
 function App() {
+  const [articles, setArticles] = React.useState([]);
+  React.useEffect(() => {
+    const getData = async () => {
+      const data = await axios.get("https://67dae93035c87309f52e9562.mockapi.io/api/v1/articles");
+      setArticles(data.data);
+    };
+
+    getData();
+  }, []);
   return (
     <div className="App">
       <Header />

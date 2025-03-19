@@ -1,16 +1,35 @@
 import React from 'react'
 import './ArticlePage.css'
 import Header from '../components/Header/Header'
+import axios from 'axios'
+import { useParams } from 'react-router'
 
-const ArticlePage = ({date, title, text}) => {
+const ArticlePage = () => {
+  let {id} = useParams();
+  const [articles, setArticles] = React.useState([]);
+  React.useEffect(() => {
+    const getData = async () => {
+      const data = await axios.get("https://67dae93035c87309f52e9562.mockapi.io/api/v1/articles");
+      setArticles(data.data);
+    };
+
+    getData();
+  }, []);
+
   return (
     <div className='ArticlePage'>
       <Header />
-      <span>{date}</span>
-      <h1>{title}</h1>
-      <p>
-        {text}
-      </p>
+      {
+        articles.length > 0 ?
+        <>
+          <span>{articles[id - 1].date}</span>
+          <h1>{articles[id - 1].title}</h1>
+          <p>
+            {articles[id - 1].text}
+          </p>
+        </>
+        : <></>
+      }
     </div>
   )
 }

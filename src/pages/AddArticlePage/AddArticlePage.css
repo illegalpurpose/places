@@ -1,0 +1,47 @@
+.AddArticlePage{
+    width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-bottom: 30px;
+}
+
+.AddArticlePage input{
+    outline: none;
+    font-size: 18px;
+}
+
+.AddArticlePage textarea{
+    outline: none;
+    font-size: 18px;
+    resize: none;
+    height: 300px;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .AddArticlePage{
+        width: 1024px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .AddArticlePage{
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .AddArticlePage{
+        width: 425px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .AddArticlePage{
+        width: 320px;
+    }
+}
+

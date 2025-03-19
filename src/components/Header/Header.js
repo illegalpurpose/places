@@ -5,7 +5,7 @@ import { Link } from 'react-router'
 const Header = () => {
   return (
     <header>
-        <Link to='/'><div>FMD BLOG</div></Link>
+        <Link to='/fmdblog'><div>FMD BLOG</div></Link>
         {/* <p>ru / en</p> */}
     </header>
   )
