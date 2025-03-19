@@ -1,0 +1,48 @@
+.ArticlePage{
+    width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-bottom: 30px;
+}
+
+.ArticlePage h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.ArticlePage span {
+    color: grey;
+    font-weight: 500;
+}
+
+.ArticlePage p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1440px) {
+    .ArticlePage{
+      width: 1024px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .ArticlePage{
+      width: 768px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .ArticlePage{
+      width: 425px;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .ArticlePage{
+      width: 320px;
+    }
+  }
+  

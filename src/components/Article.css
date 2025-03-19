@@ -1,0 +1,17 @@
+.article{
+    width: 100%;
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    row-gap: 20px;
+}
+
+.article h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.article p {
+    font-size: 18px;
+}
