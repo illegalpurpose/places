@@ -3,6 +3,7 @@ import './App.css';
 import Article from './components/Article';
 import axios from 'axios';
 import Header from './components/Header/Header'
+import { Link } from 'react-router';
 
 function App() {
   const [articles, setArticles] = React.useState([]);
@@ -17,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <h1>Всем привет хотелось сделать что то полезное и найти то что поможет мне и другим таким же как я.</h1>
+      <h1>Всем привет хотелось <Link to={'/fmdblog/add'} style={{fontSize: '20px', textDecoration: 'none'}}>сделать</Link> что то полезное и найти то что поможет мне и другим таким же как я.</h1>
       {
         articles.map((article, indx) => {
           return(

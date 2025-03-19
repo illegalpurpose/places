@@ -13,7 +13,7 @@ root.render(
     <Routes>
       <Route path="/fmdblog/" element={<App />} />
       <Route path={`/fmdblog/article/:id`} element={<ArticlePage />}/>
-      <Route path="/fmdblog/add-article" element={<AddArticlePage />} />
+      <Route path="/fmdblog/add" element={<AddArticlePage />} />
     </Routes>
   </BrowserRouter>
 );
