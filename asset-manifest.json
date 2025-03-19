@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fmdblog/static/css/main.9c55cecf.css",
+    "main.js": "/fmdblog/static/js/main.0cddffef.js",
+    "index.html": "/fmdblog/index.html",
+    "main.9c55cecf.css.map": "/fmdblog/static/css/main.9c55cecf.css.map",
+    "main.0cddffef.js.map": "/fmdblog/static/js/main.0cddffef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c55cecf.css",
+    "static/js/main.0cddffef.js"
+  ]
+}
