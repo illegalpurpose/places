@@ -25,6 +25,8 @@ const AddArticlePage = () => {
         "title": title,
         "text":  text
     });
+
+    document.location.href='https://illegalpurpose.github.io/fmdblog'
   }
   return (
     <div className='AddArticlePage'>
