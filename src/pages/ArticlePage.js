@@ -2,7 +2,7 @@ import React from 'react'
 import './ArticlePage.css'
 import Header from '../components/Header/Header'
 import axios from 'axios'
-import { useParams } from 'react-router'
+import { useParams } from 'react-router-dom'
 
 const ArticlePage = () => {
   let {id} = useParams();

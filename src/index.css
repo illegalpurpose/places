@@ -8,7 +8,31 @@
   font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: black;
+  overflow-wrap: break-word;
+}
+
+:root {
+  background-color: #F5F5F5;
+  color: #333333;
+  a {
+    color: #333333;
+  }
+}
+
+/* Темная тема (через data-theme) */
+[data-theme="dark"] {
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+  a {
+    color: #E0E0E0;
+  }
+  header{
+    border-color: #E0E0E0;
+  }
+
+  .article {
+    border-color: #E0E0E0;
+  }
 }
 
 /* Убираем внутренние отступы */
@@ -76,3 +100,9 @@ select {
   font: inherit;
 }
 
+/* @media (prefers-color-scheme: dark) {
+  * {
+    color: #E0E0E0;
+    background-color: #1E1E1E;
+  }
+} */

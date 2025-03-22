@@ -3,7 +3,7 @@ import './App.css';
 import Article from './components/Article';
 import axios from 'axios';
 import Header from './components/Header/Header'
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 function App() {
   const [articles, setArticles] = React.useState([]);
@@ -22,7 +22,7 @@ function App() {
       {
         articles.map((article, indx) => {
           return(
-            <Article key={indx} indx={indx} title={article.title} text={article.text}/>
+            <Article key={indx} indx={indx} title={article.title} text={article.text} date={article.date}/>
           )
         })
       }
