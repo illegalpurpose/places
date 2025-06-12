@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fmdblog/static/css/main.cb68fafe.css",
-    "main.js": "/fmdblog/static/js/main.d07ec833.js",
+    "main.css": "/fmdblog/static/css/main.a8988257.css",
+    "main.js": "/fmdblog/static/js/main.7effb98b.js",
     "index.html": "/fmdblog/index.html",
-    "main.cb68fafe.css.map": "/fmdblog/static/css/main.cb68fafe.css.map",
-    "main.d07ec833.js.map": "/fmdblog/static/js/main.d07ec833.js.map"
+    "main.a8988257.css.map": "/fmdblog/static/css/main.a8988257.css.map",
+    "main.7effb98b.js.map": "/fmdblog/static/js/main.7effb98b.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb68fafe.css",
-    "static/js/main.d07ec833.js"
+    "static/css/main.a8988257.css",
+    "static/js/main.7effb98b.js"
   ]
 }
