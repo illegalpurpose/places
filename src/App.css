@@ -12,6 +12,14 @@ h1{
   font-size: 20px;
 }
 
+.search{
+  background-color: inherit;
+  border: solid 1px #1E1E1E;
+  padding: 5px;
+  color: #1E1E1E;
+  outline: none;
+}
+
 @media screen and (max-width: 1440px) {
   .App{
     width: 1024px;

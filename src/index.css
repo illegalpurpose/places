@@ -33,6 +33,10 @@
   .article {
     border-color: #E0E0E0;
   }
+  .search{
+    color: #E0E0E0;
+    border-color: #E0E0E0;
+  }
 }
 
 /* Убираем внутренние отступы */

@@ -7,7 +7,10 @@ import { useParams } from "react-router-dom";
 
 const ArticlePage = () => {
 	let { id } = useParams();
-	const [articles, setArticles] = React.useState([]);
+	const [articles] = React.useState(data || []);
+	const [language, setLanguage] = React.useState(
+		localStorage.getItem("language") || "ru"
+	);
 	React.useEffect(() => {
 		// const getData = async () => {
 		//   const data = await axios.get("https://67dae93035c87309f52e9562.mockapi.io/api/v1/articles");
@@ -15,22 +18,26 @@ const ArticlePage = () => {
 		//   document.title = data.data[id - 1].title;
 		// };
 		// getData();
-
-		setArticles(data);
-		document.title = data[id - 1].title;
-	}, [id]);
+		document.title = data[id - 1].title[language];
+	}, [id, language]);
 
 	return (
 		<div className="ArticlePage">
-			<Header />
+			<Header language={language} setLanguage={setLanguage} />
 			{articles.length > 0 ? (
 				<>
-					<span>{articles[id - 1].date}</span>
-					<h1>{articles[id - 1].title}</h1>
+					<span>
+						{articles[id - 1].date +
+							" / " +
+							articles[id - 1].city[language] +
+							" / " +
+							articles[id - 1].category[language]}
+					</span>
+					<h1>{articles[id - 1].title[language]}</h1>
 					<p style={{ whiteSpace: "pre-line" }}>
-						{articles[id - 1].text}
+						{articles[id - 1].text[language]}
 					</p>
-					{articles[id - 1].content}
+					{articles[id - 1].content[language]}
 				</>
 			) : (
 				<></>
