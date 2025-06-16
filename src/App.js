@@ -62,6 +62,7 @@ function App() {
 							date={article.date}
 							city={article.city[language]}
 							category={article.category[language]}
+							language={language}
 						/>
 					);
 				})}

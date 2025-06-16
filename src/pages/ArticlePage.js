@@ -6,10 +6,10 @@ import Header from "../components/Header/Header";
 import { useParams } from "react-router-dom";
 
 const ArticlePage = () => {
-	let { id } = useParams();
+	let { id, pageLanguage } = useParams();
 	const [articles] = React.useState(data || []);
 	const [language, setLanguage] = React.useState(
-		localStorage.getItem("language") || "ru"
+		pageLanguage || localStorage.getItem("language")
 	);
 	React.useEffect(() => {
 		// const getData = async () => {
