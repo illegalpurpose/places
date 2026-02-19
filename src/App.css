@@ -1,46 +1,41 @@
-.App{
-  width: 1200px;
-  min-height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  row-gap: 30px;
-  padding-bottom: 30px;
+.App {
+    width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-bottom: 30px;
 }
 
-h1{
-  font-size: 20px;
-}
-
-.search{
-  background-color: inherit;
-  border: solid 1px #1E1E1E;
-  padding: 5px;
-  color: #1E1E1E;
-  outline: none;
+.search {
+    background-color: inherit;
+    border: solid 1px #1e1e1e;
+    padding: 5px;
+    color: #1e1e1e;
+    outline: none;
 }
 
 @media screen and (max-width: 1440px) {
-  .App{
-    width: 1024px;
-  }
+    .App {
+        width: 1024px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-  .App{
-    width: 768px;
-  }
+    .App {
+        width: 768px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .App{
-    width: 425px;
-  }
+    .App {
+        width: 425px;
+    }
 }
 
 @media screen and (max-width: 425px) {
-  .App{
-    width: 320px;
-  }
+    .App {
+        width: 320px;
+    }
 }
-

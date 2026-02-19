@@ -9,7 +9,7 @@ const NotFoundPage = () => {
                 <title>404 | Страница не найдена</title>
             </Helmet>
             <Header />
-            <h1>404 | Страница не найдена</h1>
+            <h1 style={{ margin: "0 auto" }}>404 | Страница не найдена</h1>
             <Footer />
         </div>
     );

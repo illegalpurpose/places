@@ -106,9 +106,22 @@ select {
     font: inherit;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  * {
-    color: #E0E0E0;
-    background-color: #1E1E1E;
-  }
-} */
+h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+}
