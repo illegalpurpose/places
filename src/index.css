@@ -39,6 +39,10 @@
         color: #e0e0e0;
         border-color: #e0e0e0;
     }
+    .logo_img {
+        background-color: #e0e0e0;
+        fill: #1e1e1e;
+    }
 }
 
 /* Убираем внутренние отступы */

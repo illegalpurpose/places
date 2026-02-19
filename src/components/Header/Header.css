@@ -16,9 +16,13 @@ header a {
     display: flex;
     column-gap: 10px;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo_img {
+    background-color: #1e1e1e;
+    fill: #e0e0e0;
+    padding: 10px;
     width: 40px;
     height: 40px;
     border-radius: 5px;
