@@ -21,4 +21,18 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://places.md/article/3</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://places.md/article/4</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   </urlset>

@@ -1,4 +1,18 @@
-.ThemeSwitcher{
+.theme_switcher_background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.ThemeSwitcher {
     width: 12px;
     height: 12px;
     border-radius: 100%;

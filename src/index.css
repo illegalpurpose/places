@@ -43,6 +43,9 @@
         background-color: #e0e0e0;
         fill: #1e1e1e;
     }
+    .theme_switcher_background {
+        background-color: #e0e0e0;
+    }
 }
 
 /* Убираем внутренние отступы */
