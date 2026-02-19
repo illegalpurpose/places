@@ -3,19 +3,21 @@ import { data } from "./articles.js";
 import "./App.css";
 import Article from "./components/Article";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer.js";
+import { Helmet } from "react-helmet";
 
 function App() {
     const [articles] = React.useState(data);
     const [input, setInput] = React.useState("");
 
-    React.useEffect(() => {
-        document.title = "places.md";
-    }, []);
-
     return (
         <div className="App">
+            <Helmet>
+                <title>places.md</title>
+                <meta name="description" content="Рассуждения на разные темы" />
+            </Helmet>
             <Header />
-            <p>Все о Молдовe на одном сайте.</p>
+            <p>Рассуждения на разные темы</p>
             <input
                 name="search"
                 className="search"
@@ -26,9 +28,6 @@ function App() {
                     setInput(event.target.value);
                 }}
             />
-            <h2 style={{ fontSize: "20px" }}>
-                {input.length > 0 ? input + ":" : "Статьи"}
-            </h2>
             {articles
                 .filter((article) =>
                     article.title.toLowerCase().includes(input.toLowerCase()),
@@ -37,7 +36,7 @@ function App() {
                     return (
                         <Article
                             key={indx}
-                            indx={indx}
+                            id={article.id}
                             title={article.title}
                             text={article.text}
                             date={article.date}
@@ -46,6 +45,7 @@ function App() {
                         />
                     );
                 })}
+            <Footer />
         </div>
     );
 }

@@ -6,8 +6,12 @@ const Header = () => {
     return (
         <header>
             <Link to="/">
-                <div>places.md</div>
+                <img src="./logo512.png" alt="logo" className="logo_img" />
             </Link>
+            <Link to="/">
+                <h1>places.md</h1>
+            </Link>
+
             <ThemeSwitcher />
         </header>
     );
