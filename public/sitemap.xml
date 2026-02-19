@@ -3,45 +3,16 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Главная страница -->
   <url>
     <loc>https://places.md/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Статья RU -->
   <url>
-    <loc>https://places.md/ru/article/1</loc>
+    <loc>https://places.md/article/1</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://places.md/ru/article/1" />
     <xhtml:link rel="alternate" hreflang="ro" href="https://places.md/ro/article/1" />
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Статья RO -->
-  <url>
-    <loc>https://places.md/ro/article/1</loc>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://places.md/ro/article/1" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://places.md/ru/article/1" />
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-   <!-- Статья RU -->
-  <url>
-    <loc>https://places.md/ru/article/2</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://places.md/ru/article/2" />
-    <xhtml:link rel="alternate" hreflang="ro" href="https://places.md/ro/article/2" />
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Статья RO -->
-  <url>
-    <loc>https://places.md/ro/article/2</loc>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://places.md/ro/article/2" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://places.md/ru/article/2" />
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
