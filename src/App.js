@@ -32,6 +32,7 @@ function App() {
                 .filter((article) =>
                     article.title.toLowerCase().includes(input.toLowerCase()),
                 )
+                .reverse()
                 .map((article, indx) => {
                     return (
                         <Article

@@ -132,3 +132,7 @@ p {
     font-size: 18px;
     font-weight: 400;
 }
+
+b {
+    font-weight: 900;
+}
